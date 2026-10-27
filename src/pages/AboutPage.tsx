@@ -78,7 +78,7 @@ export const AboutPage: React.FC = () => {
             <div className="lg:col-span-5 space-y-4">
               <div className="border border-[#D9DBE8] rounded-2xl overflow-hidden shadow-xl">
                 <CarImageSlot
-                  src="/cars/hero-fleet.jpg"
+                  src="/vehicle-photos/hero-fleet.jpg"
                   alt="Shayne'n'Dad Executive Fleet in Harare"
                   aspectRatio="4/3"
                   carName="Greencroft Operations & Fleet"

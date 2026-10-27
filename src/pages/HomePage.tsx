@@ -186,7 +186,7 @@ export const HomePage: React.FC = () => {
               <div className="relative group rounded-3xl overflow-hidden border border-white/15 bg-white/5 backdrop-blur-md shadow-2xl p-2.5">
                 <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-[#00005E]">
                   <img
-                    src="/cars/hero-fleet.jpg"
+                    src="/vehicle-photos/hero-fleet.jpg"
                     alt="Shayne'n'Dad Luxury Fleet Harare"
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
@@ -561,7 +561,7 @@ export const HomePage: React.FC = () => {
             <div className="lg:col-span-5 space-y-6">
               <div className="rounded-2xl overflow-hidden border border-white/15 shadow-2xl relative aspect-[16/9] group bg-black/40">
                 <img
-                  src="/cars/mercedes-e-class.jpg"
+                  src="/vehicle-photos/mercedes-e-class.jpg"
                   alt="Mercedes-Benz E-Class Executive Hire in Harare"
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />

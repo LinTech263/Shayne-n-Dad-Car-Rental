@@ -145,8 +145,8 @@ export const CarDetailPage: React.FC<CarDetailPageProps> = ({ carSlug }) => {
                 <CarImageSlot
                   src={
                     activeImageIndex === 2
-                      ? '/cars/hero-fleet.jpg'
-                      : car.images[activeImageIndex] || car.images[0] || '/cars/hero-fleet.jpg'
+                      ? '/vehicle-photos/hero-fleet.jpg'
+                      : car.images[activeImageIndex] || car.images[0] || '/vehicle-photos/hero-fleet.jpg'
                   }
                   alt={`${car.year} ${car.name} - Front View`}
                   aspectRatio="16/9"
@@ -188,9 +188,9 @@ export const CarDetailPage: React.FC<CarDetailPageProps> = ({ carSlug }) => {
               {/* 3 Image Slot Thumbnails */}
               <div className="grid grid-cols-3 gap-3">
                 {[
-                  { title: 'Main View', src: car.images[0] || '/cars/hero-fleet.jpg' },
-                  { title: 'Angle Profile', src: car.images[0] || '/cars/hero-fleet.jpg' },
-                  { title: 'Harare Fleet', src: '/cars/hero-fleet.jpg' }
+                  { title: 'Main View', src: car.images[0] || '/vehicle-photos/hero-fleet.jpg' },
+                  { title: 'Angle Profile', src: car.images[0] || '/vehicle-photos/hero-fleet.jpg' },
+                  { title: 'Harare Fleet', src: '/vehicle-photos/hero-fleet.jpg' }
                 ].map((thumb, idx) => (
                   <button
                     key={idx}
