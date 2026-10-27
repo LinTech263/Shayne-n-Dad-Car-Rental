@@ -1,0 +1,6 @@
+{
+  "name": "Shayne'n'Dad Car Rental",
+  "description": "Harare's premier upmarket car hire service. Executive sedans, SUVs, double cabs, self-drive, chauffeur-driven, and airport transfers in Harare, Zimbabwe.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
