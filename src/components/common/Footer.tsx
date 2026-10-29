@@ -301,6 +301,14 @@ export const Footer: React.FC = () => {
             >
               Terms of Service
             </button>
+            <span>·</span>
+            <button
+              onClick={() => navigate('/admin')}
+              className="text-[#D9DBE8]/70 hover:text-white transition-colors flex items-center gap-1 font-medium"
+              title="Shayne'n'Dad Fleet & Dispatch Portal"
+            >
+              <span>Owner Admin Portal</span>
+            </button>
           </div>
         </div>
       </div>

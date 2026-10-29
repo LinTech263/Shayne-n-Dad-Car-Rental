@@ -34,7 +34,7 @@ export const CarCard: React.FC<CarCardProps> = ({
 
   return (
     <article
-      className={`bg-white border border-[#D9DBE8]/70 rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:border-[#00005E]/40 hover:shadow-xl hover:-translate-y-1 group ${className}`}
+      className={`liquid-glass-card rounded-2xl overflow-hidden flex flex-col transition-all duration-300 group ${className}`}
     >
       {/* Media / Image Container */}
       <div className="relative overflow-hidden aspect-[16/9] bg-[#F4F5FA]">

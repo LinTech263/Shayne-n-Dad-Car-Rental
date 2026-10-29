@@ -167,4 +167,23 @@ export interface TestimonialItem {
   quote: string;
   verifiedBooking: boolean;
   featured?: boolean;
+  approved?: boolean;
+}
+
+export interface EnquiryItem {
+  id: string;
+  fullName: string;
+  phone: string;
+  email?: string;
+  carSlug: string;
+  carName: string;
+  startDate?: string;
+  endDate?: string;
+  chauffeurNeeded?: boolean;
+  pickupLocation?: string;
+  offerPrice?: number | null;
+  message?: string;
+  status: 'New' | 'Contacted' | 'Confirmed' | 'Completed' | 'Cancelled';
+  notes?: string;
+  createdAt: string;
 }

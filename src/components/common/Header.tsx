@@ -96,8 +96,8 @@ export const Header: React.FC = () => {
 
       {/* Main Sticky Header: Solid White Bar so Logo sits on White with Hairline Rule */}
       <header
-        className={`sticky top-0 z-40 bg-white border-b border-[#D9DBE8] transition-all duration-200 ${
-          isScrolled ? 'py-2 shadow-sm' : 'py-3.5'
+        className={`sticky top-0 z-40 border-b border-[#D9DBE8] transition-all duration-300 ${
+          isScrolled ? 'liquid-glass py-2.5 shadow-sm' : 'bg-white py-3.5'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-6">

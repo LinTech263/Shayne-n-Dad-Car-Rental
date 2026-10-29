@@ -60,6 +60,111 @@
   background-image: radial-gradient(ellipse at top right, rgba(0, 0, 94, 0.05) 0%, transparent 70%);
 }
 
+/* ========================================================
+   LIQUID GLASS & SILKY MOTION EFFECTS
+   ======================================================== */
+
+/* Liquid Glass Light: Frosted semi-translucent backdrop with specular reflections */
+.liquid-glass {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 94, 0.06), 0 0 0 1px rgba(255, 255, 255, 0.4) inset;
+}
+
+/* Liquid Glass Dark: Glossy translucent obsidian navy with crystalline edge */
+.liquid-glass-dark {
+  background: rgba(5, 5, 58, 0.72);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.45), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset;
+}
+
+/* Liquid Glass Card: Subtle elevation and light catching bevel */
+.liquid-glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(217, 219, 232, 0.8);
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 94, 0.05), 0 1px 1px 0 rgba(255, 255, 255, 0.9) inset;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.liquid-glass-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 0, 94, 0.3);
+  box-shadow: 0 16px 36px -6px rgba(0, 0, 94, 0.12), 0 1px 1px 0 rgba(255, 255, 255, 1) inset;
+}
+
+/* Liquid Glass Pill / Badge */
+.liquid-glass-pill {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Liquid Glass Input */
+.liquid-glass-input {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(217, 219, 232, 0.9);
+  transition: all 0.2s ease;
+}
+
+.liquid-glass-input:focus {
+  background: #ffffff;
+  border-color: var(--brand-navy);
+  box-shadow: 0 0 0 3px rgba(0, 0, 94, 0.1);
+}
+
+/* Tactile micro-interactions (Non-clunky, smooth tactile clicks) */
+.press-scale {
+  transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.press-scale:active {
+  transform: scale(0.975);
+}
+
+/* Subtle floating animation */
+@keyframes subtle-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-subtle-float {
+  animation: subtle-float 5s ease-in-out infinite;
+}
+
+/* Specular Shimmer glide */
+@keyframes sheen-sweep {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.glass-sheen {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.35) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+}
+
 /* Focus Ring */
 button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
   outline: none;

@@ -28,6 +28,7 @@ import { EnquirePage } from './pages/EnquirePage';
 import { RentalTermsPage } from './pages/RentalTermsPage';
 import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
 import { TermsPage } from './pages/TermsPage';
+import { AdminPage } from './pages/AdminPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 
 import {
@@ -136,6 +137,10 @@ function AppContent() {
       title = "Terms of Website Use | Shayne'n'Dad Car Rental";
       desc = "Terms and conditions governing the use of the Shayne'n'Dad Car Rental online booking platform.";
       updateDocumentMeta(title, desc, '/terms');
+    } else if (currentPath === '/admin') {
+      title = "Fleet Admin & Operations Portal | Shayne'n'Dad Harare";
+      desc = "Secure dispatch and fleet management portal for Shayne'n'Dad Car Rental.";
+      updateDocumentMeta(title, desc, '/admin');
     }
   }, [currentPath, cars, categories, servicesList, guidesList]);
 
@@ -205,6 +210,9 @@ function AppContent() {
     }
     if (cleanPath === '/terms') {
       return <TermsPage />;
+    }
+    if (cleanPath === '/admin') {
+      return <AdminPage />;
     }
     return <NotFoundPage />;
   };

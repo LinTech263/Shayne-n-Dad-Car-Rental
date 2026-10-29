@@ -19,12 +19,12 @@ export const AvailabilitySearchBar: React.FC<AvailabilitySearchBarProps> = ({
   };
 
   const bgStyle = isDarkTheme
-    ? 'bg-[#00005E]/95 backdrop-blur-md border-[#2A2E5A] text-white shadow-2xl'
-    : 'bg-white/95 backdrop-blur-md border-[#D9DBE8]/80 text-[#2E2E2E] shadow-xl';
+    ? 'liquid-glass-dark text-white'
+    : 'liquid-glass text-[#2E2E2E]';
 
   const inputBg = isDarkTheme
-    ? 'bg-[#05053A]/90 border-[#30356C] text-white focus:border-[#B71C24] focus:ring-1 focus:ring-[#B71C24]'
-    : 'bg-[#F4F5FA] border-[#D9DBE8] text-[#2E2E2E] focus:border-[#00005E] focus:ring-1 focus:ring-[#00005E]';
+    ? 'bg-[#05053A]/70 border-white/20 text-white focus:border-[#B71C24] focus:ring-1 focus:ring-[#B71C24]'
+    : 'bg-white/80 border-[#D9DBE8] text-[#2E2E2E] focus:border-[#00005E] focus:ring-1 focus:ring-[#00005E] shadow-2xs';
 
   const labelColor = isDarkTheme ? 'text-[#D9DBE8]' : 'text-[#6B6E80]';
 

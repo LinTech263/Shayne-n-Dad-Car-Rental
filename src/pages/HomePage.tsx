@@ -183,7 +183,7 @@ export const HomePage: React.FC = () => {
               transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
               className="lg:col-span-5"
             >
-              <div className="relative group rounded-3xl overflow-hidden border border-white/15 bg-white/5 backdrop-blur-md shadow-2xl p-2.5">
+              <div className="relative group rounded-3xl overflow-hidden liquid-glass-dark p-3 shadow-2xl animate-subtle-float">
                 <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-[#00005E]">
                   <img
                     src="/vehicle-photos/hero-fleet.jpg"
